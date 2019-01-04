@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chelsea Crowson</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <script src="index.js"></script>
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Permanent+Marker" rel="stylesheet">
+</head>
+
+<body>
+    <header className="App-header">
+        <h1>Chelsea Crowson</h1>
+        <nav>
+            <NavLink to="/">Home</NavLink>
+            <NavLink activeClassName="active" to="/projects">Projects</NavLink>
+            <NavLink activeClassName="active" to="/contact">Contact</NavLink>
+        </nav>
+        <img id='circle' alt='headshot' src='images/circle.png' />
+    </header>
+    <div id="main">
+        <img id='me' alt='profile pic' src='images/profile.png' />
+    </div>
+    <form name="contact" method="post">
+        <input type="hidden" name="form-name" value="contact" required />
+        <h2>Get in touch with me...</h2>
+        <p><input type="text" name="name" placeholder="Name" required /></p>
+        <p><input type="email" name="email" placeholder="Email" required /></p>
+        <p><input type="tel" name="phone" placeholder="Phone Number" /></p>
+        <p><textarea rows="5" cols="50" name="message" placeholder="Message..." required></textarea></p>
+        <button type="submit">Send</button>
+    </form>
+    <footer>&copy; Chelsea Crowson 2018. All rights reserved.</footer>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chelsea Crowson</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <script src="index.js"></script>
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Permanent+Marker" rel="stylesheet">
+</head>
+
+<body>
+    <header className="App-header">
+        <h1>Chelsea Crowson</h1>
+        <nav>
+            <NavLink to="/">Home</NavLink>
+            <NavLink activeClassName="active" to="/projects">Projects</NavLink>
+            <NavLink activeClassName="active" to="/contact">Contact</NavLink>
+        </nav>
+        <img id='circle' alt='headshot' src='images/circle.png' />
+    </header>
+    <div id="main">
+        <img id='me' alt='profile pic' src='images/profile.png' />
+    </div>
+    <div id='about'>
+        <h2>About Me</h2>
+        <p id='blurb'>Motivated Front-End Developer with experience in Ruby on Rails, JavaScript, and React. I am a
+            self-starter who enjoys collaborating within a team. I discovered coding through curiosity and building
+            websites for fun for employers. I look for companies that innovate and match my desire to do things
+            differently.</p>
+
+        <h2>Languages</h2>
+        <div id='languageIcons'>
+            <img className='icon' alt='html icon' src='images/html5.png' />
+            <img className='icon' alt='css icon' src='images/css3.png' />
+            <img className='icon' alt='js icon' src='images/js.png' />
+            <img className='icon' alt='react icon' src='images/react.png' />
+            <img className='icon' alt='ruby icon' src='images/ruby.png' />
+            <img className='icon' alt='rails icon' src='images/rails.png' />
+            {/* <i className="fab fa-html5"></i>
+            <i className="fab fa-css3-alt"></i> */}
+            {/* <i className="fab fa-js-square"></i>
+            <i className="fab fa-react"></i> */}
+        </div>
+
+        <h2>Around the Web</h2>
+        <div id='webIcons'>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/chelseacrowson/"><img
+                    className='atw' alt='linkedin' src='images/linkedin.png' /></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/chelsme"><img className='atw' alt='github'
+                    src='images/github.png' /></a>
+        </div>
+    </div>
+    <footer>&copy; Chelsea Crowson 2018. All rights reserved.</footer>
+</body>
+
+</html>
