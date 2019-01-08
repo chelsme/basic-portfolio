@@ -499,6 +499,20 @@ html {
   }
   
   @media screen and (max-width: 575px) and (orientation: landscape) {
+    body {
+      overflow: auto;
+    }
+
+    .App-header {
+      height: 60px;
+    }
+
+    nav {
+      top: 35px;
+      width: 100%;
+      text-align: left;
+    }
+
     #circle {
       width: 70px;
       right: 10px;
@@ -511,15 +525,30 @@ html {
     .projectImg {
       margin: 0 auto !important;
     }
+
+    .solitaireIcons {
+      margin-top: -10px;
+    }
+
+    footer {
+      position: relative;
+      padding: 0;
+    }
   }
   
   @media screen and (max-width: 470px) {
     body {
       font-size: 22px;
+      overflow: auto;
     }
     
     h2 {
       font-size: 1.1em;
+    }
+
+    footer {
+      position: relative;
+      padding: 0;
     }
   }
   
@@ -554,17 +583,9 @@ html {
       height: 50px;
       width: 50px;
     }
-
-    footer {
-      position: relative;
-    }
   }
   
   @media screen and (max-width: 380px) {
-    body {
-      overflow: auto;
-    }
-    
     nav {
       top: 50px;
     }
