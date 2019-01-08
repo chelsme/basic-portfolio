@@ -554,6 +554,10 @@ html {
       height: 50px;
       width: 50px;
     }
+
+    footer {
+      position: relative;
+    }
   }
   
   @media screen and (max-width: 380px) {
