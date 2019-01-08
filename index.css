@@ -6,7 +6,7 @@ html {
     width: 90%;
   }
   
-  .App {
+  body {
     text-align: center;
     overflow: auto;
     position: absolute;
@@ -232,7 +232,7 @@ html {
       font-size: 1.8em;
     }
   
-    .App {
+    body {
       width: 70%;
     }
   
@@ -258,7 +258,7 @@ html {
       flex-direction: column;
     }
     
-    .App {
+    body {
       width: 100%;
     }
   
@@ -323,10 +323,14 @@ html {
     }
   }
   
-  @media screen and (max-width: 900px) and (max-height: 900px) {
+  @media screen and (max-width: 910px) and (max-height: 900px) {
     .App-header {
       display: flex;
       flex-direction: column;
+    }
+
+    #aboutMe {
+      padding-top: 35px;
     }
   
     h1, nav {
@@ -355,13 +359,17 @@ html {
       top: 10px;
     }
   
-    .App {
+    body {
       width: 100%;
+      margin: 0;
     }
   
+    #blurb {
+      margin: 2% 40px;
+    }
+
     h2 {
-      padding: 20px;
-      padding-bottom: 0;
+      padding: 0px;
     }
   
     form {
@@ -374,7 +382,7 @@ html {
       width: 80px;
       top: 5px;
     } */
-    
+/*     
     h2 {
       font-size: 1.1em;
     }
@@ -400,7 +408,7 @@ html {
   
     iframe {
       height: 285px;
-    }
+    } */
   }
   
   @media screen and (max-width: 640px) {
@@ -446,16 +454,30 @@ html {
     }
   }
   
+  @media screen and (max-width: 470px) {
+    body {
+      font-size: 22px;
+    }
+    
+    h2 {
+      font-size: 1.1em;
+    }
+  }
+  
   @media screen and (max-width: 440px) {
     h1 {
       font-size: 1.5em;
       top: 10px;
     }
-  
+    
     nav {
       top: 55px;
     }
     
+    #aboutMe {
+      padding-top: 10px;
+    }
+
     #circle {
       width: 80px;
       right: 20px;
