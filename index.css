@@ -8,10 +8,10 @@ html {
   
   body {
     text-align: center;
-    overflow: auto;
+    overflow: hidden;
     position: absolute;
     top: 10vh;
-    width: 80%;
+    width: 75%;
     font-size: 24px;
     height: 90vh;
     font-family: 'Cabin', sans-serif;
@@ -108,9 +108,47 @@ html {
   }
   
   /* ********************************* projects ********************************* */
-  #projects {
-    width: 100%;
+  /* slider */
+  .w3-content img {
+    max-height: 70vh;
+    margin: auto;
+    max-width: 80%;
   }
+  
+  .w3-display-right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%,-50%);
+    z-index: 3;
+  }
+
+  .w3-display-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
+    z-index: 3;
+  }
+
+  .w3-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    background-color: transparent;
+    color: #813326;
+}
+
+#loginHeader {
+  text-decoration: underline;
+  font-weight: bold;
+}
   
   .video-react .video-react-big-play-button {
     position: absolute;
@@ -146,7 +184,7 @@ html {
   iframe {
   /* .video-react.video-react-fluid { */
     background-color: transparent;
-    height: 450px;
+    height: 505px;
     width: 320px;
     padding-top: 0 !important;
     margin: auto;
@@ -189,6 +227,7 @@ html {
     flex-direction: column;
     justify-content: center;
     font-size: 20px;
+    margin-top: -20px;
   }
   
   #login p {
@@ -371,6 +410,14 @@ html {
     h2 {
       padding: 0px;
     }
+
+    .w3-content {
+      margin-top: 40px;
+    }
+
+    iframe {
+      height: 450px;
+    }
   
     form {
       padding: 20px;
@@ -411,7 +458,7 @@ html {
     } */
   }
   
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 630px) {
     .langIcon, .githubIcon, #login {
       justify-content: center;
     }
@@ -432,6 +479,18 @@ html {
     .projectImg {
       margin: 40px auto !important;
       width: 70% !important;
+    }
+
+    iframe {
+      height: 420px;
+    }
+
+    .projectImg {
+    width: 95% !important;
+    }
+
+    .solitaireIcons {
+      margin-top: -30px;
     }
   
     form h2 {
@@ -498,6 +557,10 @@ html {
   }
   
   @media screen and (max-width: 380px) {
+    body {
+      overflow: auto;
+    }
+    
     nav {
       top: 50px;
     }
